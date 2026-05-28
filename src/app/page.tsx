@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import GhlCallModal from "./GhlCallModal";
 
 const photos = {
   showroomExterior:
@@ -283,13 +285,6 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-6 grid gap-2">
-                    <a
-                      href="https://wa.me/34000000000"
-                      data-conversation-intent={`availability-${vehicle.name}`}
-                      className="conversation-cta inline-flex min-h-11 w-full items-center justify-center rounded-full bg-white text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff]"
-                    >
-                      Consultar disponibilidad
-                    </a>
                     <a
                       href="#contacto"
                       data-conversation-intent={`team-${vehicle.name}`}
@@ -633,9 +628,14 @@ export default function Home() {
             <a className="hover:text-white" href="#contacto">
               Cita
             </a>
+            <Link className="hover:text-white" href="/privacidad-contacto">
+              Política de privacidad
+            </Link>
           </div>
         </div>
       </footer>
+
+      <GhlCallModal />
     </main>
   );
 }

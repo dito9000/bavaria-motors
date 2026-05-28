@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ['dig-rewrap-parmesan.ngrok-free.dev'],
   images: {
     remotePatterns: [
       {
