@@ -106,11 +106,11 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#070b12] text-slate-50">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-[#15345d]/40 bg-[#060b13]/88 backdrop-blur-xl">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8"
+          className="mx-auto flex max-w-7xl items-center justify-between gap-2 px-3 py-3 sm:px-8"
           aria-label="Navegación principal"
         >
           <a href="#" className="group flex items-center gap-3" aria-label="Inicio de Bavaria Motors">
-            <span className="logo-shell relative flex h-14 w-[220px] items-center overflow-hidden rounded-md border border-white/10 bg-[#07101f] px-3 shadow-lg shadow-black/20 transition duration-300 sm:h-[4.5rem] sm:w-[320px] lg:w-[340px]">
+            <span className="logo-shell relative flex h-12 w-[150px] items-center overflow-hidden rounded-md border border-white/10 bg-[#07101f] px-2 shadow-lg shadow-black/20 transition duration-300 sm:h-[4.5rem] sm:w-[320px] sm:px-3 lg:w-[340px]">
               <Image
                 src="/bavaria-motors-logo-primary.png"
                 alt="Bavaria Motors"
@@ -141,14 +141,14 @@ export default function Home() {
           <a
             href="https://wa.me/34000000000"
             data-conversation-intent="whatsapp-contact"
-            className="conversation-cta rounded-full bg-[#0e63d8] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-950/30 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#07101f] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12]"
+            className="conversation-cta max-w-[156px] rounded-full bg-[#0e63d8] px-3 py-2 text-center text-xs font-semibold leading-4 text-white shadow-lg shadow-blue-950/30 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#07101f] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12] sm:max-w-none sm:px-5 sm:text-sm sm:leading-normal"
           >
             Contáctanos por WhatsApp
           </a>
         </nav>
       </header>
 
-      <section className="relative isolate min-h-screen px-5 pt-28 sm:px-8">
+      <section className="relative isolate min-h-screen px-4 pt-24 sm:px-8 sm:pt-28">
         <div className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(10,19,33,0.98)_0%,#070b12_68%,#09101b_100%)]" />
         <div className="absolute inset-0 -z-10">
           <Image
@@ -166,38 +166,38 @@ export default function Home() {
         <div className="hero-light-sweep absolute inset-0 -z-10 opacity-35" />
         <div className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-[#070b12] to-transparent" />
 
-        <div className="mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-12 py-12 lg:grid-cols-[0.96fr_1.04fr]">
+        <div className="mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-10 py-10 sm:min-h-[calc(100vh-7rem)] sm:gap-12 sm:py-12 lg:grid-cols-[0.96fr_1.04fr]">
           <div className="max-w-2xl">
-            <p className="mb-5 text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="mb-4 text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:mb-5 sm:text-sm sm:tracking-[0.24em]">
               Concesionario premium en Valencia
             </p>
-            <h1 className="text-5xl font-semibold leading-[1.02] tracking-normal text-white sm:text-7xl lg:text-8xl">
+            <h1 className="text-4xl font-semibold leading-[1.04] tracking-normal text-white sm:text-6xl lg:text-8xl">
               Tu próximo coche, con asesoramiento real.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+            <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:mt-6 sm:text-lg sm:leading-8">
               Compra vehículos premium usados y seminuevos en stock, o pídenos
               que localicemos por ti el modelo exacto en España o Europa.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
               <a
                 href="#stock"
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#070b12]"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-4 text-center text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#070b12] sm:w-auto sm:px-6"
               >
                 Ver vehículos disponibles
               </a>
               <a
                 href="#busqueda"
                 data-conversation-intent="personal-search"
-                className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-6 text-sm font-semibold text-white shadow-lg shadow-blue-950/35 transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12]"
+                className="conversation-cta inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#0e63d8] px-4 text-center text-sm font-semibold text-white shadow-lg shadow-blue-950/35 transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12] sm:w-auto sm:px-6"
               >
                 Buscar mi coche
               </a>
             </div>
-            <dl className="mt-10 grid max-w-2xl grid-cols-3 gap-4 border-t border-white/10 pt-6">
+            <dl className="mt-8 grid max-w-2xl grid-cols-1 gap-5 border-t border-white/10 pt-6 min-[390px]:grid-cols-3 sm:mt-10 sm:gap-4">
               {trustItems.map(([value, label]) => (
                 <div key={label}>
-                  <dt className="text-2xl font-semibold text-white">{value}</dt>
-                  <dd className="mt-1 text-xs uppercase tracking-[0.14em] text-slate-400">
+                  <dt className="text-xl font-semibold text-white sm:text-2xl">{value}</dt>
+                  <dd className="mt-1 text-xs uppercase tracking-[0.1em] text-slate-400 sm:tracking-[0.14em]">
                     {label}
                   </dd>
                 </div>
@@ -230,11 +230,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="stock" className="relative px-5 py-32 sm:px-8">
+      <section id="stock" className="relative px-4 py-20 sm:px-8 sm:py-32">
         <div className="absolute inset-x-0 top-0 -z-10 h-72 bg-[radial-gradient(circle_at_50%_0%,rgba(14,99,216,0.12),transparent_55%)]" />
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Stock curado premium
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
@@ -247,10 +247,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-6 sm:mt-14 md:grid-cols-2 xl:grid-cols-4 xl:gap-7">
             {vehicles.map((vehicle) => (
               <article key={vehicle.name} className="stock-card group">
-                <div className="relative h-64 overflow-hidden rounded-t-lg bg-slate-900">
+                <div className="relative h-36 overflow-hidden rounded-t-lg bg-slate-900 min-[390px]:h-40 sm:h-64">
                   <Image
                     src={vehicle.image}
                     alt={vehicle.name}
@@ -263,32 +263,32 @@ export default function Home() {
                     }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050913] via-transparent to-transparent" />
-                  <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-black/35 px-3 py-1 text-xs font-medium text-white backdrop-blur-md">
+                  <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-black/35 px-2.5 py-1 text-[0.68rem] font-medium text-white backdrop-blur-md sm:left-4 sm:top-4 sm:px-3 sm:text-xs">
                     {vehicle.tag}
                   </span>
                 </div>
-                <div className="p-5">
-                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7db5ff]">
+                <div className="p-4 sm:p-5">
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.14em] text-[#7db5ff] sm:text-xs sm:tracking-[0.18em]">
                     {vehicle.type}
                   </p>
-                  <h3 className="mt-3 min-h-16 text-2xl font-semibold leading-tight text-white">
+                  <h3 className="mt-2 text-lg font-semibold leading-tight text-white sm:mt-3 sm:min-h-16 sm:text-2xl">
                     {vehicle.name}
                   </h3>
-                  <div className="mt-5 flex items-end justify-between gap-4">
+                  <div className="mt-3 flex items-end justify-between gap-3 sm:mt-5 sm:gap-4">
                     <div>
-                      <p className="text-xs uppercase tracking-[0.16em] text-slate-500">Precio</p>
-                      <p className="mt-1 text-xl font-semibold text-white">{vehicle.price}</p>
+                      <p className="text-[0.68rem] uppercase tracking-[0.12em] text-slate-500 sm:text-xs sm:tracking-[0.16em]">Precio</p>
+                      <p className="mt-1 text-lg font-semibold text-white sm:text-xl">{vehicle.price}</p>
                     </div>
-                    <div className="text-right text-sm text-slate-300">
+                    <div className="text-right text-xs text-slate-300 sm:text-sm">
                       <p>{vehicle.year}</p>
                       <p>{vehicle.km}</p>
                     </div>
                   </div>
-                  <div className="mt-6 grid gap-2">
+                  <div className="mt-4 grid gap-2 sm:mt-6">
                     <a
                       href="#contacto"
                       data-conversation-intent={`team-${vehicle.name}`}
-                      className="inline-flex min-h-10 w-full items-center justify-center rounded-full border border-white/15 text-sm font-semibold text-slate-100 transition duration-300 hover:border-[#7db5ff]/50 hover:bg-white/10"
+                      className="inline-flex min-h-9 w-full items-center justify-center rounded-full border border-white/15 px-3 text-xs font-semibold text-slate-100 transition duration-300 hover:border-[#7db5ff]/50 hover:bg-white/10 sm:min-h-10 sm:text-sm"
                     >
                       Solicitar información
                     </a>
@@ -300,11 +300,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="catalogo" className="relative border-y border-[#15345d]/45 bg-[#08111d] px-5 py-24 sm:px-8">
+      <section id="catalogo" className="relative border-y border-[#15345d]/45 bg-[#08111d] px-4 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7db5ff]">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.22em]">
                 Catálogo boutique
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
@@ -315,7 +315,7 @@ export default function Home() {
                 entradas sin perder la sensación de selección cuidada.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+            <div className="grid grid-cols-2 gap-2 text-xs min-[390px]:text-sm sm:grid-cols-4 sm:gap-3">
               {["Marca", "Carrocería", "Presupuesto", "Kilometraje"].map((filter) => (
                 <button key={filter} className="premium-filter" type="button">
                   {filter}
@@ -325,7 +325,7 @@ export default function Home() {
           </div>
 
           <details className="catalogue-panel group mt-10" open>
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 border-b border-white/10 p-5 text-sm font-semibold text-white marker:hidden">
+            <summary className="flex cursor-pointer list-none flex-col items-start justify-between gap-3 border-b border-white/10 p-4 text-sm font-semibold text-white marker:hidden min-[390px]:flex-row min-[390px]:items-center sm:gap-4 sm:p-5">
               <span>Unidades disponibles y próximas entradas</span>
               <span className="rounded-full border border-[#7db5ff]/35 px-4 py-2 text-xs text-[#dcecff] transition group-open:bg-[#0e63d8] group-open:text-white">
                 Ver catálogo
@@ -361,16 +361,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="busqueda" className="border-y border-white/10 bg-[#0b1320] px-5 py-24 sm:px-8">
+      <section id="busqueda" className="border-y border-white/10 bg-[#0b1320] px-4 py-20 sm:px-8 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Búsqueda e importación
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
               ¿No encuentras el coche que buscas?
             </h2>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-slate-300">
+            <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               Si no ves el modelo exacto en stock, nuestro equipo puede ayudarte
               a localizarlo. Revisamos opciones, kilometraje, historial,
               equipamiento y viabilidad de importación antes de proponerte una
@@ -380,13 +380,13 @@ export default function Home() {
               <a
                 href="https://wa.me/34000000000"
                 data-conversation-intent="custom-search"
-                className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-6 text-sm font-semibold text-white shadow-lg shadow-blue-950/35 transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff]"
+                className="conversation-cta inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#0e63d8] px-4 text-center text-sm font-semibold text-white shadow-lg shadow-blue-950/35 transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] sm:w-auto sm:px-6"
               >
                 Solicitar búsqueda personalizada
               </a>
               <a
                 href="#contacto"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/20 px-6 text-sm font-semibold text-white transition duration-300 hover:border-[#7db5ff]/55 hover:bg-white/10"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/20 px-4 text-center text-sm font-semibold text-white transition duration-300 hover:border-[#7db5ff]/55 hover:bg-white/10 sm:w-auto sm:px-6"
               >
                 Concertar una llamada
               </a>
@@ -408,16 +408,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-28 sm:px-8">
-        <div className="mx-auto max-w-7xl border-y border-white/10 py-16">
+      <section className="px-4 py-20 sm:px-8 sm:py-28">
+        <div className="mx-auto max-w-7xl border-y border-white/10 py-12 sm:py-16">
           <div className="max-w-4xl">
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Desde 2000
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
               Más de 20 años seleccionando vehículos.
             </h2>
-            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               Trabajamos con selección cuidada, historial claro y atención
               directa, combinando stock propio con búsqueda personalizada en
               España y Europa.
@@ -426,16 +426,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="financiacion" className="px-5 py-28 sm:px-8">
+      <section id="financiacion" className="px-4 py-20 sm:px-8 sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Servicios Bavaria
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
               Todo lo importante, explicado con claridad.
             </h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               Servicios pensados para comprar con confianza, sin procesos
               complicados ni presión comercial.
             </p>
@@ -459,10 +459,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="por-que" className="px-5 pb-24 sm:px-8">
+      <section id="por-que" className="px-4 pb-20 sm:px-8 sm:pb-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Por qué elegirnos
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
@@ -475,23 +475,23 @@ export default function Home() {
                 <span className="text-sm font-semibold text-[#7db5ff]">
                   0{index + 1}
                 </span>
-                <p className="mt-4 text-lg leading-7 text-slate-200">{benefit}</p>
+                <p className="mt-4 text-base leading-7 text-slate-200 sm:text-lg">{benefit}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="ubicacion" className="px-5 pb-24 sm:px-8">
+      <section id="ubicacion" className="px-4 pb-20 sm:px-8 sm:pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-3xl">
-            <p className="text-sm font-medium uppercase tracking-[0.24em] text-[#7db5ff]">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.24em]">
               Ubicación
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-5xl">
               Visítanos en Valencia.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-300">
+            <p className="mt-5 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
               Atención presencial con cita previa en La Eliana. Te mostramos
               vehículos disponibles, opciones bajo encargo y alternativas reales
               adaptadas a tu presupuesto.
@@ -499,11 +499,11 @@ export default function Home() {
           </div>
 
           <div className="grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
-            <div className="rounded-lg border border-white/10 bg-white/[0.045] p-7 shadow-2xl shadow-black/20 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7db5ff]">
+            <div className="rounded-lg border border-white/10 bg-white/[0.045] p-5 shadow-2xl shadow-black/20 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.22em]">
                 Bavaria Motors
               </p>
-              <div className="mt-7 space-y-4 text-lg leading-7 text-white">
+              <div className="mt-6 space-y-4 text-base leading-7 text-white sm:mt-7 sm:text-lg">
                 <p>C/ Tuéjar, 41</p>
                 <p>46183 L’Eliana, Valencia</p>
                 <p>
@@ -520,7 +520,7 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <p className="mt-6 rounded-full border border-[#7db5ff]/25 bg-[#0e63d8]/10 px-4 py-2 text-sm font-semibold text-[#dcecff]">
+              <p className="mt-6 rounded-full border border-[#7db5ff]/25 bg-[#0e63d8]/10 px-4 py-2 text-center text-sm font-semibold text-[#dcecff] sm:text-left">
                 Atención con cita previa
               </p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -528,13 +528,13 @@ export default function Home() {
                   href="https://www.google.com/maps/search/?api=1&query=C%2F%20Tu%C3%A9jar%2C%2041%2C%2046183%20L%27Eliana%2C%20Valencia"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff]"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-4 text-center text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff] sm:px-5"
                 >
                   Abrir en Google Maps
                 </a>
                 <a
                   href="https://wa.me/34962725027"
-                  className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff]"
+                  className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-4 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] sm:px-5"
                 >
                   Contactar por WhatsApp
                 </a>
@@ -552,12 +552,12 @@ export default function Home() {
               <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,11,18,0.74),rgba(7,11,18,0.12)_52%,rgba(7,11,18,0.7))]" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,11,18,0.08),rgba(7,11,18,0.62))]" />
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_30%,rgba(14,99,216,0.24),transparent_38%)]" />
-              <div className="absolute bottom-6 left-6 right-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-3 sm:bottom-6 sm:left-6 sm:right-6 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7db5ff]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.22em]">
                     Bavaria Motors
                   </p>
-                  <p className="mt-2 text-2xl font-semibold text-white">
+                  <p className="mt-2 text-xl font-semibold text-white sm:text-2xl">
                     La Eliana · Valencia
                   </p>
                 </div>
@@ -570,14 +570,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contacto" className="px-5 pb-20 sm:px-8">
+      <section id="contacto" className="px-4 pb-16 sm:px-8 sm:pb-20">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-lg border border-white/10 bg-white text-[#07101f]">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.7fr]">
-            <div className="p-8 sm:p-10 lg:p-14">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#0e63d8]">
+            <div className="p-5 sm:p-10 lg:p-14">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#0e63d8] sm:text-sm sm:tracking-[0.22em]">
                 Contacto y citas
               </p>
-              <h2 className="mt-4 max-w-3xl text-4xl font-semibold sm:text-6xl">
+              <h2 className="mt-4 max-w-3xl text-3xl font-semibold sm:text-4xl lg:text-6xl">
                 Ven a ver un coche o déjanos buscarlo por ti.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600">
@@ -586,17 +586,17 @@ export default function Home() {
                 realista.
               </p>
             </div>
-            <div className="flex flex-col justify-end gap-3 bg-slate-100 p-8 sm:p-10 lg:p-14">
+            <div className="flex flex-col justify-end gap-3 bg-slate-100 p-5 sm:p-10 lg:p-14">
               <a
                 href="https://wa.me/34000000000"
                 data-conversation-intent="appointment-whatsapp"
-                className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-6 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#07101f]"
+                className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-4 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#07101f] sm:px-6"
               >
                 Escribir por WhatsApp
               </a>
               <a
                 href="mailto:appointments@bavariamotors.example"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white px-6 text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-slate-50"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-slate-300 bg-white px-4 text-center text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-slate-50 sm:px-6"
               >
                 Reservar cita
               </a>
@@ -609,7 +609,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-5 py-8 text-sm text-slate-400 sm:px-8">
+      <footer className="border-t border-white/10 px-4 py-8 text-sm text-slate-400 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p>Bavaria Motors</p>
           <div className="flex flex-wrap gap-5">

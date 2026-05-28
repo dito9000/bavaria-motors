@@ -95,7 +95,7 @@ export default function GhlCallModal() {
 
   return (
     <div
-      className="ghl-modal-overlay"
+      className="ghl-modal-overlay max-sm:!items-start max-sm:!p-3"
       role="presentation"
       onMouseDown={(event) => {
         if (event.target === event.currentTarget) {
@@ -106,10 +106,10 @@ export default function GhlCallModal() {
       <section
         aria-labelledby="ghl-modal-title"
         aria-modal="true"
-        className="ghl-modal-panel"
+        className="ghl-modal-panel max-sm:!max-h-[calc(100dvh-1.5rem)]"
         role="dialog"
       >
-        <div className="ghl-modal-header">
+        <div className="ghl-modal-header max-sm:!p-4">
           <div>
             <p className="ghl-modal-kicker">Bavaria Motors</p>
             <h2 id="ghl-modal-title">{activeForm.title}</h2>
@@ -126,7 +126,7 @@ export default function GhlCallModal() {
         </div>
 
         <div
-          className="ghl-modal-form"
+          className="ghl-modal-form max-sm:!h-[min(var(--ghl-form-height,619px),calc(100dvh-7rem))] max-sm:!p-2"
           style={{ "--ghl-form-height": `${activeForm.dataHeight}px` } as CSSProperties}
         >
           <iframe
