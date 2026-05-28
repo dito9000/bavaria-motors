@@ -110,14 +110,14 @@ export default function Home() {
           aria-label="Navegación principal"
         >
           <a href="#" className="group flex items-center gap-3" aria-label="Inicio de Bavaria Motors">
-            <span className="logo-shell relative flex h-12 w-[150px] items-center overflow-hidden rounded-md border border-white/10 bg-[#07101f] px-2 shadow-lg shadow-black/20 transition duration-300 sm:h-[4.5rem] sm:w-[320px] sm:px-3 lg:w-[340px]">
+            <span className="logo-shell relative flex h-11 w-[166px] items-center overflow-hidden rounded-md border border-white/10 bg-[#07101f] px-2 shadow-lg shadow-black/20 transition duration-300 sm:h-[4.5rem] sm:w-[320px] sm:px-3 lg:w-[340px]">
               <Image
                 src="/bavaria-motors-logo-primary.png"
                 alt="Bavaria Motors"
                 width={2048}
                 height={819}
                 priority
-                className="h-[156%] w-[156%] max-w-none object-contain"
+                className="h-full w-full max-w-none scale-[1.2] object-contain sm:h-[156%] sm:w-[156%] sm:scale-100"
               />
             </span>
             <span className="hidden border-l border-white/12 pl-3 text-xs leading-5 text-slate-400 lg:block">
@@ -141,7 +141,7 @@ export default function Home() {
           <a
             href="https://wa.me/34000000000"
             data-conversation-intent="whatsapp-contact"
-            className="conversation-cta max-w-[156px] rounded-full bg-[#0e63d8] px-3 py-2 text-center text-xs font-semibold leading-4 text-white shadow-lg shadow-blue-950/30 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#07101f] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12] sm:max-w-none sm:px-5 sm:text-sm sm:leading-normal"
+            className="conversation-cta max-w-[142px] rounded-full bg-[#0e63d8] px-3 py-2 text-center text-[0.7rem] font-semibold leading-4 text-white shadow-lg shadow-blue-950/30 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#07101f] focus:outline-none focus:ring-2 focus:ring-[#6aa8ff] focus:ring-offset-2 focus:ring-offset-[#070b12] sm:max-w-none sm:px-5 sm:text-sm sm:leading-normal"
           >
             Contáctanos por WhatsApp
           </a>
@@ -157,7 +157,7 @@ export default function Home() {
             width={1800}
             height={1200}
             priority
-            className="h-full w-full object-cover object-[center_72%] opacity-58"
+            className="h-full w-full object-cover object-[72%_74%] opacity-58 sm:object-[center_72%]"
           />
         </div>
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,#070b12_0%,rgba(7,11,18,0.93)_34%,rgba(7,11,18,0.62)_70%,rgba(7,11,18,0.82)_100%)]" />
@@ -247,10 +247,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 sm:mt-14 md:grid-cols-2 xl:grid-cols-4 xl:gap-7">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-14 sm:gap-6 md:grid-cols-2 xl:grid-cols-4 xl:gap-7">
             {vehicles.map((vehicle) => (
               <article key={vehicle.name} className="stock-card group">
-                <div className="relative h-36 overflow-hidden rounded-t-lg bg-slate-900 min-[390px]:h-40 sm:h-64">
+                <div className="relative h-24 overflow-hidden rounded-t-lg bg-slate-900 min-[390px]:h-28 sm:h-64">
                   <Image
                     src={vehicle.image}
                     alt={vehicle.name}
@@ -263,32 +263,32 @@ export default function Home() {
                     }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050913] via-transparent to-transparent" />
-                  <span className="absolute left-3 top-3 rounded-full border border-white/15 bg-black/35 px-2.5 py-1 text-[0.68rem] font-medium text-white backdrop-blur-md sm:left-4 sm:top-4 sm:px-3 sm:text-xs">
+                  <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/35 px-2 py-0.5 text-[0.56rem] font-medium leading-4 text-white backdrop-blur-md sm:left-4 sm:top-4 sm:px-3 sm:py-1 sm:text-xs">
                     {vehicle.tag}
                   </span>
                 </div>
-                <div className="p-4 sm:p-5">
-                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.14em] text-[#7db5ff] sm:text-xs sm:tracking-[0.18em]">
+                <div className="p-3 sm:p-5">
+                  <p className="text-[0.56rem] font-medium uppercase tracking-[0.08em] text-[#7db5ff] sm:text-xs sm:tracking-[0.18em]">
                     {vehicle.type}
                   </p>
-                  <h3 className="mt-2 text-lg font-semibold leading-tight text-white sm:mt-3 sm:min-h-16 sm:text-2xl">
+                  <h3 className="mt-1.5 min-h-10 text-sm font-semibold leading-tight text-white sm:mt-3 sm:min-h-16 sm:text-2xl">
                     {vehicle.name}
                   </h3>
-                  <div className="mt-3 flex items-end justify-between gap-3 sm:mt-5 sm:gap-4">
+                  <div className="mt-2 flex items-end justify-between gap-2 sm:mt-5 sm:gap-4">
                     <div>
-                      <p className="text-[0.68rem] uppercase tracking-[0.12em] text-slate-500 sm:text-xs sm:tracking-[0.16em]">Precio</p>
-                      <p className="mt-1 text-lg font-semibold text-white sm:text-xl">{vehicle.price}</p>
+                      <p className="text-[0.56rem] uppercase tracking-[0.08em] text-slate-500 sm:text-xs sm:tracking-[0.16em]">Precio</p>
+                      <p className="mt-0.5 text-sm font-semibold text-white sm:mt-1 sm:text-xl">{vehicle.price}</p>
                     </div>
-                    <div className="text-right text-xs text-slate-300 sm:text-sm">
+                    <div className="text-right text-[0.62rem] leading-4 text-slate-300 sm:text-sm sm:leading-normal">
                       <p>{vehicle.year}</p>
                       <p>{vehicle.km}</p>
                     </div>
                   </div>
-                  <div className="mt-4 grid gap-2 sm:mt-6">
+                  <div className="mt-3 grid gap-2 sm:mt-6">
                     <a
                       href="#contacto"
                       data-conversation-intent={`team-${vehicle.name}`}
-                      className="inline-flex min-h-9 w-full items-center justify-center rounded-full border border-white/15 px-3 text-xs font-semibold text-slate-100 transition duration-300 hover:border-[#7db5ff]/50 hover:bg-white/10 sm:min-h-10 sm:text-sm"
+                      className="inline-flex min-h-8 w-full items-center justify-center rounded-full border border-white/15 px-2 text-center text-[0.62rem] font-semibold leading-4 text-slate-100 transition duration-300 hover:border-[#7db5ff]/50 hover:bg-white/10 sm:min-h-10 sm:text-sm"
                     >
                       Solicitar información
                     </a>
@@ -331,26 +331,26 @@ export default function Home() {
                 Ver catálogo
               </span>
             </summary>
-            <div className="grid gap-3 p-3 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-3 p-3 md:grid-cols-2 lg:grid-cols-3">
               {catalogueVehicles.map(([name, body, year, km, status]) => (
-                <article key={name} className="catalogue-item">
+                <article key={name} className="catalogue-item !p-3 sm:!p-5">
                   <div>
-                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#7db5ff]">
+                    <p className="text-[0.56rem] font-medium uppercase tracking-[0.08em] text-[#7db5ff] sm:text-xs sm:tracking-[0.16em]">
                       {body}
                     </p>
-                    <h3 className="mt-2 text-xl font-semibold text-white">{name}</h3>
+                    <h3 className="mt-1.5 min-h-10 text-sm font-semibold leading-tight text-white sm:mt-2 sm:min-h-0 sm:text-xl sm:leading-normal">{name}</h3>
                   </div>
-                  <div className="mt-5 flex flex-wrap gap-2 text-xs text-slate-300">
-                    <span className="rounded-full bg-white/7 px-3 py-1">{year}</span>
-                    <span className="rounded-full bg-white/7 px-3 py-1">{km}</span>
-                    <span className="rounded-full border border-[#7db5ff]/25 px-3 py-1 text-[#dcecff]">
+                  <div className="mt-3 flex flex-wrap gap-1.5 text-[0.62rem] leading-4 text-slate-300 sm:mt-5 sm:gap-2 sm:text-xs sm:leading-normal">
+                    <span className="rounded-full bg-white/7 px-2 py-0.5 sm:px-3 sm:py-1">{year}</span>
+                    <span className="rounded-full bg-white/7 px-2 py-0.5 sm:px-3 sm:py-1">{km}</span>
+                    <span className="rounded-full border border-[#7db5ff]/25 px-2 py-0.5 text-[#dcecff] sm:px-3 sm:py-1">
                       {status}
                     </span>
                   </div>
                   <a
                     href="https://wa.me/34000000000"
                     data-conversation-intent={`info-${name}`}
-                    className="mt-5 inline-flex min-h-10 w-full items-center justify-center rounded-full border border-white/15 text-sm font-semibold text-white transition duration-300 hover:border-[#7db5ff]/55 hover:bg-white/10"
+                    className="mt-3 inline-flex min-h-8 w-full items-center justify-center rounded-full border border-white/15 px-2 text-center text-[0.62rem] font-semibold leading-4 text-white transition duration-300 hover:border-[#7db5ff]/55 hover:bg-white/10 sm:mt-5 sm:min-h-10 sm:text-sm"
                   >
                     Solicitar información
                   </a>
@@ -498,12 +498,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
-            <div className="rounded-lg border border-white/10 bg-white/[0.045] p-5 shadow-2xl shadow-black/20 sm:p-8">
+          <div className="grid gap-4 min-[390px]:grid-cols-2 lg:grid-cols-[0.82fr_1.18fr] lg:gap-5">
+            <div className="rounded-lg border border-white/10 bg-white/[0.045] p-4 shadow-2xl shadow-black/20 sm:p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7db5ff] sm:text-sm sm:tracking-[0.22em]">
                 Bavaria Motors
               </p>
-              <div className="mt-6 space-y-4 text-base leading-7 text-white sm:mt-7 sm:text-lg">
+              <div className="mt-5 space-y-3 text-sm leading-6 text-white sm:mt-7 sm:space-y-4 sm:text-lg sm:leading-7">
                 <p>C/ Tuéjar, 41</p>
                 <p>46183 L’Eliana, Valencia</p>
                 <p>
@@ -520,34 +520,34 @@ export default function Home() {
                   </a>
                 </p>
               </div>
-              <p className="mt-6 rounded-full border border-[#7db5ff]/25 bg-[#0e63d8]/10 px-4 py-2 text-center text-sm font-semibold text-[#dcecff] sm:text-left">
+              <p className="mt-5 rounded-full border border-[#7db5ff]/25 bg-[#0e63d8]/10 px-3 py-2 text-center text-xs font-semibold text-[#dcecff] sm:mt-6 sm:px-4 sm:text-left sm:text-sm">
                 Atención con cita previa
               </p>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              <div className="mt-5 grid gap-2 sm:mt-8 sm:grid-cols-2 sm:gap-3">
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=C%2F%20Tu%C3%A9jar%2C%2041%2C%2046183%20L%27Eliana%2C%20Valencia"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-4 text-center text-sm font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff] sm:px-5"
+                  className="inline-flex min-h-10 items-center justify-center rounded-full bg-white px-3 text-center text-xs font-semibold text-[#07101f] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dcecff] sm:min-h-12 sm:px-5 sm:text-sm"
                 >
                   Abrir en Google Maps
                 </a>
                 <a
                   href="https://wa.me/34962725027"
-                  className="conversation-cta inline-flex min-h-12 items-center justify-center rounded-full bg-[#0e63d8] px-4 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] sm:px-5"
+                  className="conversation-cta inline-flex min-h-10 items-center justify-center rounded-full bg-[#0e63d8] px-3 text-center text-xs font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#247cff] sm:min-h-12 sm:px-5 sm:text-sm"
                 >
                   Contactar por WhatsApp
                 </a>
               </div>
             </div>
 
-            <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-white/10 bg-[#07101f] shadow-2xl shadow-black/25">
+            <div className="relative min-h-[260px] overflow-hidden rounded-lg border border-white/10 bg-[#07101f] shadow-2xl shadow-black/25 min-[390px]:min-h-full lg:min-h-[360px]">
               <Image
                 src={photos.location}
                 alt="Exterior de concesionario premium"
                 width={1400}
                 height={900}
-                className="h-full min-h-[360px] w-full object-cover object-center opacity-78 saturate-[0.92] contrast-[1.04]"
+                className="h-full min-h-[260px] w-full object-cover object-center opacity-78 saturate-[0.92] contrast-[1.04] min-[390px]:min-h-full lg:min-h-[360px]"
               />
               <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,11,18,0.74),rgba(7,11,18,0.12)_52%,rgba(7,11,18,0.7))]" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,11,18,0.08),rgba(7,11,18,0.62))]" />
